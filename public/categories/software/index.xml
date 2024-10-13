@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Software on Example Site</title>
+        <link>https://guerracarlos.com/categories/software/</link>
+        <description>Recent content in Software on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://guerracarlos.com/categories/software/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MicroSD</title>
+        <link>https://guerracarlos.com/p/microsd/</link>
+        <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/p/microsd/</guid>
+        <description>&lt;img src="https://guerracarlos.com/p/microsd/microsd.png" alt="Featured image of post MicroSD" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía, Sitio web&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Colaborador&lt;/p&gt;
+&lt;p&gt;Enlace: &lt;a href=&#34;https://derechosdigitales.org/microsd/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://derechosdigitales.org/microsd/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://derechosdigitales.org/microsd/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

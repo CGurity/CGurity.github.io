@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on Example Site</title>
+        <link>https://guerracarlos.com/categories/</link>
+        <description>Recent content in Categories on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://guerracarlos.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Article</title>
+        <link>https://guerracarlos.com/categories/article/</link>
+        <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/article/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Contributor</title>
+        <link>https://guerracarlos.com/categories/contributor/</link>
+        <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/contributor/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>En</title>
+        <link>https://guerracarlos.com/categories/en/</link>
+        <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/en/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Collaborator</title>
+        <link>https://guerracarlos.com/categories/collaborator/</link>
+        <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/collaborator/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Es</title>
+        <link>https://guerracarlos.com/categories/es/</link>
+        <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/es/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Event</title>
+        <link>https://guerracarlos.com/categories/event/</link>
+        <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/event/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Presenter</title>
+        <link>https://guerracarlos.com/categories/presenter/</link>
+        <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/presenter/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Guide</title>
+        <link>https://guerracarlos.com/categories/guide/</link>
+        <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/guide/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Author</title>
+        <link>https://guerracarlos.com/categories/author/</link>
+        <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/author/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Research</title>
+        <link>https://guerracarlos.com/categories/research/</link>
+        <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/research/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Software</title>
+        <link>https://guerracarlos.com/categories/software/</link>
+        <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/software/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Report</title>
+        <link>https://guerracarlos.com/categories/report/</link>
+        <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/report/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Test</title>
+        <link>https://guerracarlos.com/categories/test/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://guerracarlos.com/categories/test/</guid>
+        <description>&lt;img src="https://guerracarlos.com/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
