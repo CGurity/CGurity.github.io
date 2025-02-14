@@ -4,10 +4,7 @@ title = "The challenges of reporting"
 date = "2018-11-20"
 description = "Articles for the SAFETAG website."
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "article",

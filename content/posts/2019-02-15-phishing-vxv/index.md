@@ -4,15 +4,11 @@ title = "Phishing by Venezuelan government puts activists and internet users at 
 date = "2019-02-15"
 description = "Research for VeSinFiltro | Informe para VeSinFiltro."
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
-    "report",
     "research",
-    "collaborator",
+    "contributor",
     "es",
     "en",
 ]

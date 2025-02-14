@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Example Site</title>
-        <link>https://guerracarlos.com/</link>
-        <description>Recent content on Example Site</description>
+        <title>Carlos Guerra</title>
+        <link>http://localhost:1313/</link>
+        <description>Recent content on Carlos Guerra</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://guerracarlos.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 14 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About me</title>
+        <link>http://localhost:1313/about-me/</link>
+        <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/about-me/</guid>
+        <description>&lt;h1 id=&#34;about-this-site&#34;&gt;About this site
+&lt;/h1&gt;&lt;p&gt;This website is mostly a repository of resources where I collaborated, sessions I participated in, and ocassionaly other things related to hobbies (maybe something about ergonomic keyboards, or desk set ups coming?) or anything that caught my attention and want to have at hand.&lt;/p&gt;
+&lt;h1 id=&#34;about-me&#34;&gt;About me
+&lt;/h1&gt;&lt;p&gt;I&amp;rsquo;m (among other things) a digital security trainer, auditor, and advisor with experience working mostly with civil society actors like human rights defenders, journalists, and targeted activists and groups. My biggest interests in this field are facilitation and the learning aspects of digital security and threat modeling, creation of materials, and training on more advanced threats for local security practitioners, as well than working with high and extreme risk actors.&lt;/p&gt;
+&lt;p&gt;I have worked in global, regional and in-country projects and organizations, the biggest ones are:&lt;/p&gt;
+&lt;h2 id=&#34;internews-greater-internet-freedom&#34;&gt;Internews: Greater Internet Freedom
+&lt;/h2&gt;&lt;p&gt;My role involved designing and implementing the digital security strategy for 39 countries across 8 regions. This meant working closely with in-country organizations and consultants to develop activities that would strengthen the digital resilience of civil society actors on the ground. Some specific highlights from this program include developing a &lt;a class=&#34;link&#34; href=&#34;https://greaterinternetfreedom.org/course/part01-intro-and-vms/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tutorial to analize suspicious documents&lt;/a&gt; in search of malware, helping coordinate the &lt;a class=&#34;link&#34; href=&#34;https://greaterinternetfreedom.org/wp-content/uploads/2023/09/Final-Evaluation-Report-Internews-GIF-SafeTag_FINAL-003.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;internal evaluation on the security assessment framework SAFETAG&lt;/a&gt;, and organizing the &lt;a class=&#34;link&#34; href=&#34;https://greaterinternetfreedom.org/blog/orgsec-village-2024-uniting-practitioners-to-share-best-practices-in-digital-security/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Organizational Security Village&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;internews-civic-defenders&#34;&gt;Internews: Civic DEFENDERS
+&lt;/h2&gt;&lt;p&gt;So far, I contributed to the program proposal and designed the strategies and processes for implementing activities in 16 countries across 8 regions in the world, as well as global activities tailored to increase the capacity of the consortium of local organizations implementing the main activities. My work focused on digital security and circumvention technology, aiming to bolster the resilience of at-risk civil society groups.&lt;/p&gt;
+&lt;h2 id=&#34;conexo&#34;&gt;Conexo
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://conexo.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Here&lt;/a&gt; I worked on a variety of projects, from conducting digital security training for journalists in sensitive zones, to developing organizational security policies for human rights organizations being persecuted, and speaking in lectures for college students on digital security all in many Latin American countries.&lt;/p&gt;
+&lt;h2 id=&#34;fake-antenna-detection-fade-project&#34;&gt;Fake Antenna Detection (FADe) Project
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://fadeproject.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Here&lt;/a&gt; I was the technical lead of research of anomalies in cell phone networks looking for the presence of fake base stations in 10 localities in Latin America. I mostly helped design the monitoring campaigns and deploy and manage all the technical infrastructure to analyze the data, employing novel methodologies/tools to find and process the relevant data like the seaglass project from the University of Washington and crocodile hunter (now RayHunter) from the Electronic Frontier Foundation.&lt;/p&gt;
+&lt;h2 id=&#34;derechos-digitales&#34;&gt;Derechos Digitales
+&lt;/h2&gt;&lt;p&gt;After my Ford/Mozilla Open Web Fellowship, I joined the &lt;a class=&#34;link&#34; href=&#34;https://derechosdigitales.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Derechos Digitales&lt;/a&gt; team, where I provided IT support and implemented security-related activities across Latin America. This included trainings, audits, and network building for civil society actors. I also had the opportunity to deepen my IT administration skills, developing, for example, an &lt;a class=&#34;link&#34; href=&#34;https://github.com/CGurity/ansible-lemp-wp-certbot-playbook&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ansible playbook for secure static/PHP/WordPress deployments&lt;/a&gt; (which might be updated soon).&lt;/p&gt;
+&lt;h2 id=&#34;venezuela-inteligente-now-vesinfiltro---pasar-a-lista-de-abajo-si-resulta-complicado-redactar-mucho&#34;&gt;Venezuela Inteligente (now VESinFiltro) - pasar a lista de abajo si resulta complicado redactar mucho
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://vesinfiltro.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Here&lt;/a&gt; I helped the team to develop a monitoring campaign to measure technical censorship in Venezuela around 2014 and also later as a collaborator for other activities. I contributed in a couple of quick research pieces around &lt;a class=&#34;link&#34; href=&#34;https://vesinfiltro.com/noticias/Phishing_by_Venezuelan_government_targets_activists/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;phishing campaigns conducted by the Venezuelan government&lt;/a&gt;, there we uncovered and analyzed DNS poisoning and spoofing in the country main ISP, making users to redirect legitimate traffic to malicious clone websites targeting opposition simpatizers.&lt;/p&gt;
+&lt;h2 id=&#34;also&#34;&gt;Also&amp;hellip;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;I was an &lt;a class=&#34;link&#34; href=&#34;https://medium.com/read-write-participate/my-year-being-a-ford-mozilla-open-web-fellow-5d88fd4cc5b9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ford/Mozilla Open Web Fellow&lt;/a&gt; for the 2017-2018 cohort hosted in Derechos Digitales (after the fellowship I joined the team :)&lt;/li&gt;
+&lt;li&gt;I have done many consultant gig in Latin America, Spain, and the US conducting digital security trainings and audits for civil society organizations and media outlets, as well as training for new trainers and auditors.&lt;/li&gt;
+&lt;li&gt;Some others around election monitoring, surveillance tech, supporting incidents, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Besides more technically specialized stuff, I&amp;rsquo;m also very interested in process improvement (as in mapping, optimization, systematization, automation, etc.), databases, and process documentation.&lt;/p&gt;
+&lt;h2 id=&#34;some-other-initiatives-where-i-collaborated&#34;&gt;Some other initiatives where I collaborated
+&lt;/h2&gt;&lt;p&gt;From more active content development to advise, to participation in conversations leading to some products:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://safetag.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SAFETAG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://infuse.quest/en/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;INFUSE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://digitalfirstaid.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Digital First Aid Kit (DFAK)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://tech-care.cc/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tech Care&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>How to implement a remote SAFETAG audit: A step by step guide.</title>
-        <link>https://guerracarlos.com/p/how-to-implement-a-remote-safetag-audit-a-step-by-step-guide./</link>
+        <link>http://localhost:1313/p/how-to-implement-a-remote-safetag-audit-a-step-by-step-guide./</link>
         <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/how-to-implement-a-remote-safetag-audit-a-step-by-step-guide./</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/how-to-implement-a-remote-safetag-audit-a-step-by-step-guide./RemoteSteps.png" alt="Featured image of post How to implement a remote SAFETAG audit: A step by step guide." /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/how-to-implement-a-remote-safetag-audit-a-step-by-step-guide./</guid>
+        <description>&lt;img src="http://localhost:1313/p/how-to-implement-a-remote-safetag-audit-a-step-by-step-guide./RemoteSteps.png" alt="Featured image of post How to implement a remote SAFETAG audit: A step by step guide." /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Article&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Contributor&lt;/p&gt;
 &lt;p&gt;Link: &lt;a href=&#34;https://safetag.org/2020/12/04/remote-audit-steps.html&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://safetag.org/2020/12/04/remote-audit-steps.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -21,11 +75,11 @@
         </item>
         <item>
         <title>Conexión Segura en VIVO: Respondiendo TUS preguntas de seguridad y censura en Internet</title>
-        <link>https://guerracarlos.com/p/conexi%C3%B3n-segura-en-vivo-respondiendo-tus-preguntas-de-seguridad-y-censura-en-internet/</link>
+        <link>http://localhost:1313/p/conexi%C3%B3n-segura-en-vivo-respondiendo-tus-preguntas-de-seguridad-y-censura-en-internet/</link>
         <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/conexi%C3%B3n-segura-en-vivo-respondiendo-tus-preguntas-de-seguridad-y-censura-en-internet/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/conexi%C3%B3n-segura-en-vivo-respondiendo-tus-preguntas-de-seguridad-y-censura-en-internet/conexion-segura-video.png" alt="Featured image of post Conexión Segura en VIVO: Respondiendo TUS preguntas de seguridad y censura en Internet" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/conexi%C3%B3n-segura-en-vivo-respondiendo-tus-preguntas-de-seguridad-y-censura-en-internet/</guid>
+        <description>&lt;img src="http://localhost:1313/p/conexi%C3%B3n-segura-en-vivo-respondiendo-tus-preguntas-de-seguridad-y-censura-en-internet/conexion-segura-video.png" alt="Featured image of post Conexión Segura en VIVO: Respondiendo TUS preguntas de seguridad y censura en Internet" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Video/Streaming&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Presentador invitado (~min 48)&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.youtube.com/watch?v=_GbV8KFX59k&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=_GbV8KFX59k&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -35,11 +89,11 @@
         </item>
         <item>
         <title>Evasión de censura y anonimato en Internet - Carlos Guerra</title>
-        <link>https://guerracarlos.com/p/evasi%C3%B3n-de-censura-y-anonimato-en-internet-carlos-guerra/</link>
+        <link>http://localhost:1313/p/evasi%C3%B3n-de-censura-y-anonimato-en-internet-carlos-guerra/</link>
         <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/evasi%C3%B3n-de-censura-y-anonimato-en-internet-carlos-guerra/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/evasi%C3%B3n-de-censura-y-anonimato-en-internet-carlos-guerra/wikimedia.png" alt="Featured image of post Evasión de censura y anonimato en Internet - Carlos Guerra" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/evasi%C3%B3n-de-censura-y-anonimato-en-internet-carlos-guerra/</guid>
+        <description>&lt;img src="http://localhost:1313/p/evasi%C3%B3n-de-censura-y-anonimato-en-internet-carlos-guerra/wikimedia.png" alt="Featured image of post Evasión de censura y anonimato en Internet - Carlos Guerra" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Video/Streaming&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Presentador&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.youtube.com/watch?v=WI-a22eUdY4&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=WI-a22eUdY4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -49,11 +103,11 @@
         </item>
         <item>
         <title>Seguridad Digital: Conceptos y herramientas basicas</title>
-        <link>https://guerracarlos.com/p/seguridad-digital-conceptos-y-herramientas-basicas/</link>
+        <link>http://localhost:1313/p/seguridad-digital-conceptos-y-herramientas-basicas/</link>
         <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/seguridad-digital-conceptos-y-herramientas-basicas/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/seguridad-digital-conceptos-y-herramientas-basicas/guia-conexo-2020.png" alt="Featured image of post Seguridad Digital: Conceptos y herramientas basicas" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/seguridad-digital-conceptos-y-herramientas-basicas/</guid>
+        <description>&lt;img src="http://localhost:1313/p/seguridad-digital-conceptos-y-herramientas-basicas/guia-conexo-2020.png" alt="Featured image of post Seguridad Digital: Conceptos y herramientas basicas" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Colaborador&lt;/p&gt;
 &lt;p&gt;Enlace PDF: &lt;a href=&#34;https://conexo.org/conceptos-y-herramientas-basicas-pdf&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://conexo.org/conceptos-y-herramientas-basicas-pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -66,11 +120,11 @@
         </item>
         <item>
         <title>FADe Project: Fade Antenna Detection Project</title>
-        <link>https://guerracarlos.com/p/fade-project-fade-antenna-detection-project/</link>
+        <link>http://localhost:1313/p/fade-project-fade-antenna-detection-project/</link>
         <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/fade-project-fade-antenna-detection-project/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/fade-project-fade-antenna-detection-project/fade.png" alt="Featured image of post FADe Project: Fade Antenna Detection Project" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/fade-project-fade-antenna-detection-project/</guid>
+        <description>&lt;img src="http://localhost:1313/p/fade-project-fade-antenna-detection-project/fade.png" alt="Featured image of post FADe Project: Fade Antenna Detection Project" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Research project&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Author - Technical Lead&lt;/p&gt;
 &lt;p&gt;Link: &lt;a href=&#34;https://fadeproject.org/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://fadeproject.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -84,11 +138,11 @@
         </item>
         <item>
         <title>Recomendaciones de seguridad en Redes caseras de cara al teletrabajo</title>
-        <link>https://guerracarlos.com/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</link>
+        <link>http://localhost:1313/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</link>
         <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/teletrabajo.png" alt="Featured image of post Recomendaciones de seguridad en Redes caseras de cara al teletrabajo" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</guid>
+        <description>&lt;img src="http://localhost:1313/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/teletrabajo.png" alt="Featured image of post Recomendaciones de seguridad en Redes caseras de cara al teletrabajo" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.derechosdigitales.org/wp-content/uploads/Recomendaciones-de-seguridad-en-Redes-caseras-de-cara-al-teletrabajo.pdf&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.derechosdigitales.org/wp-content/uploads/Recomendaciones-de-seguridad-en-Redes-caseras-de-cara-al-teletrabajo.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -97,11 +151,11 @@
         </item>
         <item>
         <title>MicroSD</title>
-        <link>https://guerracarlos.com/p/microsd/</link>
+        <link>http://localhost:1313/p/microsd/</link>
         <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/microsd/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/microsd/microsd.png" alt="Featured image of post MicroSD" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/microsd/</guid>
+        <description>&lt;img src="http://localhost:1313/p/microsd/microsd.png" alt="Featured image of post MicroSD" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía, Sitio web&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Colaborador&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://derechosdigitales.org/microsd/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://derechosdigitales.org/microsd/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -110,11 +164,11 @@
         </item>
         <item>
         <title>Manual rápido de OONI Probe para monitorear bloqueos de sitios y servicios usando teléfonos Android</title>
-        <link>https://guerracarlos.com/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</link>
+        <link>http://localhost:1313/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/ooni.png" alt="Featured image of post Manual rápido de OONI Probe para monitorear bloqueos de sitios y servicios usando teléfonos Android" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</guid>
+        <description>&lt;img src="http://localhost:1313/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/ooni.png" alt="Featured image of post Manual rápido de OONI Probe para monitorear bloqueos de sitios y servicios usando teléfonos Android" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.derechosdigitales.org/13931/manual-rapido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-telefonos-android/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.derechosdigitales.org/13931/manual-rapido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-telefonos-android/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -123,11 +177,11 @@
         </item>
         <item>
         <title>Sobre el ataque reportado a OpenPGP</title>
-        <link>https://guerracarlos.com/p/sobre-el-ataque-reportado-a-openpgp/</link>
+        <link>http://localhost:1313/p/sobre-el-ataque-reportado-a-openpgp/</link>
         <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/sobre-el-ataque-reportado-a-openpgp/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/sobre-el-ataque-reportado-a-openpgp/openpgp.png" alt="Featured image of post Sobre el ataque reportado a OpenPGP" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/sobre-el-ataque-reportado-a-openpgp/</guid>
+        <description>&lt;img src="http://localhost:1313/p/sobre-el-ataque-reportado-a-openpgp/openpgp.png" alt="Featured image of post Sobre el ataque reportado a OpenPGP" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Artículo&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.derechosdigitales.org/13332/sobre-el-ataque-reportado-a-openpgp/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.derechosdigitales.org/13332/sobre-el-ataque-reportado-a-openpgp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -136,11 +190,11 @@
         </item>
         <item>
         <title>Dispositivos y sistemas: ¿Quién tiene el control?</title>
-        <link>https://guerracarlos.com/p/dispositivos-y-sistemas-qui%C3%A9n-tiene-el-control/</link>
+        <link>http://localhost:1313/p/dispositivos-y-sistemas-qui%C3%A9n-tiene-el-control/</link>
         <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/dispositivos-y-sistemas-qui%C3%A9n-tiene-el-control/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/dispositivos-y-sistemas-qui%C3%A9n-tiene-el-control/huawei-usa.jpg" alt="Featured image of post Dispositivos y sistemas: ¿Quién tiene el control?" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/dispositivos-y-sistemas-qui%C3%A9n-tiene-el-control/</guid>
+        <description>&lt;img src="http://localhost:1313/p/dispositivos-y-sistemas-qui%C3%A9n-tiene-el-control/huawei-usa.jpg" alt="Featured image of post Dispositivos y sistemas: ¿Quién tiene el control?" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Artículo&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.derechosdigitales.org/13250/dispositivos-y-sistemas-quien-tiene-el-control/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.derechosdigitales.org/13250/dispositivos-y-sistemas-quien-tiene-el-control/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -149,47 +203,19 @@
         </item>
         <item>
         <title>Archives</title>
-        <link>https://guerracarlos.com/archives/</link>
+        <link>http://localhost:1313/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/archives/</guid>
+        <guid>http://localhost:1313/archives/</guid>
         <description></description>
         </item>
         <item>
-        <title>About</title>
-        <link>https://guerracarlos.com/about/</link>
-        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://guerracarlos.com/about/</guid>
-        <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache License 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
-&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuin/goldmark&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/alecthomas/chroma&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/muesli/smartcrop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/cobra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/viper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;
-&lt;p&gt;Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.&lt;/p&gt;
-&lt;p&gt;Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.&lt;/p&gt;
-&lt;p&gt;Learn more and contribute on &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>Venezuela: Cuando el atacante es el gobierno</title>
-        <link>https://guerracarlos.com/p/venezuela-cuando-el-atacante-es-el-gobierno/</link>
+        <link>http://localhost:1313/p/venezuela-cuando-el-atacante-es-el-gobierno/</link>
         <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/venezuela-cuando-el-atacante-es-el-gobierno/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/venezuela-cuando-el-atacante-es-el-gobierno/whatsapp.png" alt="Featured image of post Venezuela: Cuando el atacante es el gobierno" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/venezuela-cuando-el-atacante-es-el-gobierno/</guid>
+        <description>&lt;img src="http://localhost:1313/p/venezuela-cuando-el-atacante-es-el-gobierno/whatsapp.png" alt="Featured image of post Venezuela: Cuando el atacante es el gobierno" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Artículo&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Colaborador&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.derechosdigitales.org/12841/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.derechosdigitales.org/12841/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -198,11 +224,11 @@
         </item>
         <item>
         <title>Phishing by Venezuelan government puts activists and internet users at risk. | Phishing impulsado por el gobierno de Venezuela pone en riesgo a activistas y usuarios de internet.</title>
-        <link>https://guerracarlos.com/p/phishing-by-venezuelan-government-puts-activists-and-internet-users-at-risk.-phishing-impulsado-por-el-gobierno-de-venezuela-pone-en-riesgo-a-activistas-y-usuarios-de-internet./</link>
+        <link>http://localhost:1313/p/phishing-by-venezuelan-government-puts-activists-and-internet-users-at-risk.-phishing-impulsado-por-el-gobierno-de-venezuela-pone-en-riesgo-a-activistas-y-usuarios-de-internet./</link>
         <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/phishing-by-venezuelan-government-puts-activists-and-internet-users-at-risk.-phishing-impulsado-por-el-gobierno-de-venezuela-pone-en-riesgo-a-activistas-y-usuarios-de-internet./</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/phishing-by-venezuelan-government-puts-activists-and-internet-users-at-risk.-phishing-impulsado-por-el-gobierno-de-venezuela-pone-en-riesgo-a-activistas-y-usuarios-de-internet./2019-02-15-report.png" alt="Featured image of post Phishing by Venezuelan government puts activists and internet users at risk. | Phishing impulsado por el gobierno de Venezuela pone en riesgo a activistas y usuarios de internet." /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/phishing-by-venezuelan-government-puts-activists-and-internet-users-at-risk.-phishing-impulsado-por-el-gobierno-de-venezuela-pone-en-riesgo-a-activistas-y-usuarios-de-internet./</guid>
+        <description>&lt;img src="http://localhost:1313/p/phishing-by-venezuelan-government-puts-activists-and-internet-users-at-risk.-phishing-impulsado-por-el-gobierno-de-venezuela-pone-en-riesgo-a-activistas-y-usuarios-de-internet./2019-02-15-report.png" alt="Featured image of post Phishing by Venezuelan government puts activists and internet users at risk. | Phishing impulsado por el gobierno de Venezuela pone en riesgo a activistas y usuarios de internet." /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Research report&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Collaborator&lt;/p&gt;
 &lt;p&gt;Link: &lt;a href=&#34;https://vesinfiltro.com/noticias/Phishing_by_Venezuelan_government_targets_activists/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://vesinfiltro.com/noticias/Phishing_by_Venezuelan_government_targets_activists/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -216,11 +242,11 @@
         </item>
         <item>
         <title>#Venezuela: ¿Qué está pasando con los bloqueos en internet?</title>
-        <link>https://guerracarlos.com/p/%23venezuela-qu%C3%A9-est%C3%A1-pasando-con-los-bloqueos-en-internet/</link>
+        <link>http://localhost:1313/p/%23venezuela-qu%C3%A9-est%C3%A1-pasando-con-los-bloqueos-en-internet/</link>
         <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/%23venezuela-qu%C3%A9-est%C3%A1-pasando-con-los-bloqueos-en-internet/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/" alt="Featured image of post #Venezuela: ¿Qué está pasando con los bloqueos en internet?" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/%23venezuela-qu%C3%A9-est%C3%A1-pasando-con-los-bloqueos-en-internet/</guid>
+        <description>&lt;img src="http://localhost:1313/p/" alt="Featured image of post #Venezuela: ¿Qué está pasando con los bloqueos en internet?" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Artículo&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.derechosdigitales.org/12791/venezuela-que-esta-pasando-con-los-bloqueos-en-internet/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.derechosdigitales.org/12791/venezuela-que-esta-pasando-con-los-bloqueos-en-internet/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -229,11 +255,11 @@
         </item>
         <item>
         <title>Torificate</title>
-        <link>https://guerracarlos.com/p/torificate/</link>
+        <link>http://localhost:1313/p/torificate/</link>
         <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/torificate/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/torificate/torificate.jpg" alt="Featured image of post Torificate" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/torificate/</guid>
+        <description>&lt;img src="http://localhost:1313/p/torificate/torificate.jpg" alt="Featured image of post Torificate" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://tor.derechosdigitales.org/torificate/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tor.derechosdigitales.org/torificate/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -242,11 +268,11 @@
         </item>
         <item>
         <title>The challenges of reporting</title>
-        <link>https://guerracarlos.com/p/the-challenges-of-reporting/</link>
+        <link>http://localhost:1313/p/the-challenges-of-reporting/</link>
         <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/the-challenges-of-reporting/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/the-challenges-of-reporting/safetag-reporting.png" alt="Featured image of post The challenges of reporting" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/the-challenges-of-reporting/</guid>
+        <description>&lt;img src="http://localhost:1313/p/the-challenges-of-reporting/safetag-reporting.png" alt="Featured image of post The challenges of reporting" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Article&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Author&lt;/p&gt;
 &lt;p&gt;Links:&lt;/p&gt;
@@ -260,11 +286,11 @@
         </item>
         <item>
         <title>My Year Being a Ford-Mozilla Open Web Fellow :)</title>
-        <link>https://guerracarlos.com/p/my-year-being-a-ford-mozilla-open-web-fellow/</link>
+        <link>http://localhost:1313/p/my-year-being-a-ford-mozilla-open-web-fellow/</link>
         <pubDate>Mon, 27 Aug 2018 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/my-year-being-a-ford-mozilla-open-web-fellow/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/my-year-being-a-ford-mozilla-open-web-fellow/owf1y.png" alt="Featured image of post My Year Being a Ford-Mozilla Open Web Fellow :)" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/my-year-being-a-ford-mozilla-open-web-fellow/</guid>
+        <description>&lt;img src="http://localhost:1313/p/my-year-being-a-ford-mozilla-open-web-fellow/owf1y.png" alt="Featured image of post My Year Being a Ford-Mozilla Open Web Fellow :)" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Article&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Link: &lt;a href=&#34;https://medium.com/read-write-participate/my-year-being-a-ford-mozilla-open-web-fellow-5d88fd4cc5b9&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://medium.com/read-write-participate/my-year-being-a-ford-mozilla-open-web-fellow-5d88fd4cc5b9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -273,11 +299,11 @@
         </item>
         <item>
         <title>¿Confiable y seguro?</title>
-        <link>https://guerracarlos.com/p/confiable-y-seguro/</link>
+        <link>http://localhost:1313/p/confiable-y-seguro/</link>
         <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/confiable-y-seguro/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/confiable-y-seguro/whatsapp.png" alt="Featured image of post ¿Confiable y seguro?" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/confiable-y-seguro/</guid>
+        <description>&lt;img src="http://localhost:1313/p/confiable-y-seguro/whatsapp.png" alt="Featured image of post ¿Confiable y seguro?" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Investigación&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Colaborador&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.derechosdigitales.org/wp-content/uploads/Confiable-y-seguro.pdf&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.derechosdigitales.org/wp-content/uploads/Confiable-y-seguro.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -286,11 +312,11 @@
         </item>
         <item>
         <title>SDA: Safe and documented for activism | SDA: Seguros y documentados para el activismo</title>
-        <link>https://guerracarlos.com/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</link>
+        <link>http://localhost:1313/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</link>
         <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/sda.png" alt="Featured image of post SDA: Safe and documented for activism | SDA: Seguros y documentados para el activismo" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</guid>
+        <description>&lt;img src="http://localhost:1313/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/sda.png" alt="Featured image of post SDA: Safe and documented for activism | SDA: Seguros y documentados para el activismo" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Guide&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Author&lt;/p&gt;
 &lt;p&gt;Link: &lt;a href=&#34;https://sdamanual.org/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://sdamanual.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -304,11 +330,11 @@
         </item>
         <item>
         <title>6 Ways Being a Mozilla Fellow Has Changed My Life</title>
-        <link>https://guerracarlos.com/p/6-ways-being-a-mozilla-fellow-has-changed-my-life/</link>
+        <link>http://localhost:1313/p/6-ways-being-a-mozilla-fellow-has-changed-my-life/</link>
         <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/6-ways-being-a-mozilla-fellow-has-changed-my-life/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/6-ways-being-a-mozilla-fellow-has-changed-my-life/owf1y.png" alt="Featured image of post 6 Ways Being a Mozilla Fellow Has Changed My Life" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/6-ways-being-a-mozilla-fellow-has-changed-my-life/</guid>
+        <description>&lt;img src="http://localhost:1313/p/6-ways-being-a-mozilla-fellow-has-changed-my-life/owf1y.png" alt="Featured image of post 6 Ways Being a Mozilla Fellow Has Changed My Life" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Article&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Contributor&lt;/p&gt;
 &lt;p&gt;Link: &lt;a href=&#34;https://medium.com/read-write-participate/6-ways-being-a-mozilla-fellow-has-changed-my-life-eb14fcdf063b&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://medium.com/read-write-participate/6-ways-being-a-mozilla-fellow-has-changed-my-life-eb14fcdf063b&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -317,11 +343,11 @@
         </item>
         <item>
         <title>Contextualizing censorship measurements in Venezuela</title>
-        <link>https://guerracarlos.com/p/contextualizing-censorship-measurements-in-venezuela/</link>
+        <link>http://localhost:1313/p/contextualizing-censorship-measurements-in-venezuela/</link>
         <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/contextualizing-censorship-measurements-in-venezuela/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/contextualizing-censorship-measurements-in-venezuela/owf1y.png" alt="Featured image of post Contextualizing censorship measurements in Venezuela" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/contextualizing-censorship-measurements-in-venezuela/</guid>
+        <description>&lt;img src="http://localhost:1313/p/contextualizing-censorship-measurements-in-venezuela/owf1y.png" alt="Featured image of post Contextualizing censorship measurements in Venezuela" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Event session&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Presenter, Collaborator&lt;/p&gt;
 &lt;p&gt;Link: &lt;a href=&#34;https://internetfreedomfestival.org/wiki/index.php/Contextualizing_censorship_measurements_in_Venezuela&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://internetfreedomfestival.org/wiki/index.php/Contextualizing_censorship_measurements_in_Venezuela&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -330,11 +356,11 @@
         </item>
         <item>
         <title>Digital security guides for the Latin American society</title>
-        <link>https://guerracarlos.com/p/digital-security-guides-for-the-latin-american-society/</link>
+        <link>http://localhost:1313/p/digital-security-guides-for-the-latin-american-society/</link>
         <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/digital-security-guides-for-the-latin-american-society/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/digital-security-guides-for-the-latin-american-society/owf1y.png" alt="Featured image of post Digital security guides for the Latin American society" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/digital-security-guides-for-the-latin-american-society/</guid>
+        <description>&lt;img src="http://localhost:1313/p/digital-security-guides-for-the-latin-american-society/owf1y.png" alt="Featured image of post Digital security guides for the Latin American society" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Event session&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Presenter&lt;/p&gt;
 &lt;p&gt;Link: &lt;a href=&#34;https://internetfreedomfestival.org/wiki/index.php/Digital_security_guides_for_the_Latin_American_society&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://internetfreedomfestival.org/wiki/index.php/Digital_security_guides_for_the_Latin_American_society&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -343,10 +369,10 @@
         </item>
         <item>
         <title>Search</title>
-        <link>https://guerracarlos.com/search/</link>
+        <link>http://localhost:1313/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/search/</guid>
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         

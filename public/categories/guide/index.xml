@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Guide on Example Site</title>
-        <link>https://guerracarlos.com/categories/guide/</link>
-        <description>Recent content in Guide on Example Site</description>
+        <title>Guide on Carlos Guerra</title>
+        <link>http://localhost:1313/categories/guide/</link>
+        <description>Recent content in Guide on Carlos Guerra</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://guerracarlos.com/categories/guide/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/guide/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Seguridad Digital: Conceptos y herramientas basicas</title>
-        <link>https://guerracarlos.com/p/seguridad-digital-conceptos-y-herramientas-basicas/</link>
+        <link>http://localhost:1313/p/seguridad-digital-conceptos-y-herramientas-basicas/</link>
         <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/seguridad-digital-conceptos-y-herramientas-basicas/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/seguridad-digital-conceptos-y-herramientas-basicas/guia-conexo-2020.png" alt="Featured image of post Seguridad Digital: Conceptos y herramientas basicas" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/seguridad-digital-conceptos-y-herramientas-basicas/</guid>
+        <description>&lt;img src="http://localhost:1313/p/seguridad-digital-conceptos-y-herramientas-basicas/guia-conexo-2020.png" alt="Featured image of post Seguridad Digital: Conceptos y herramientas basicas" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Colaborador&lt;/p&gt;
 &lt;p&gt;Enlace PDF: &lt;a href=&#34;https://conexo.org/conceptos-y-herramientas-basicas-pdf&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://conexo.org/conceptos-y-herramientas-basicas-pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -25,11 +25,11 @@
         </item>
         <item>
         <title>Recomendaciones de seguridad en Redes caseras de cara al teletrabajo</title>
-        <link>https://guerracarlos.com/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</link>
+        <link>http://localhost:1313/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</link>
         <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/teletrabajo.png" alt="Featured image of post Recomendaciones de seguridad en Redes caseras de cara al teletrabajo" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</guid>
+        <description>&lt;img src="http://localhost:1313/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/teletrabajo.png" alt="Featured image of post Recomendaciones de seguridad en Redes caseras de cara al teletrabajo" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.derechosdigitales.org/wp-content/uploads/Recomendaciones-de-seguridad-en-Redes-caseras-de-cara-al-teletrabajo.pdf&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.derechosdigitales.org/wp-content/uploads/Recomendaciones-de-seguridad-en-Redes-caseras-de-cara-al-teletrabajo.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -38,11 +38,11 @@
         </item>
         <item>
         <title>Manual rápido de OONI Probe para monitorear bloqueos de sitios y servicios usando teléfonos Android</title>
-        <link>https://guerracarlos.com/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</link>
+        <link>http://localhost:1313/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/ooni.png" alt="Featured image of post Manual rápido de OONI Probe para monitorear bloqueos de sitios y servicios usando teléfonos Android" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</guid>
+        <description>&lt;img src="http://localhost:1313/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/ooni.png" alt="Featured image of post Manual rápido de OONI Probe para monitorear bloqueos de sitios y servicios usando teléfonos Android" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://www.derechosdigitales.org/13931/manual-rapido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-telefonos-android/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.derechosdigitales.org/13931/manual-rapido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-telefonos-android/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -51,11 +51,11 @@
         </item>
         <item>
         <title>Torificate</title>
-        <link>https://guerracarlos.com/p/torificate/</link>
+        <link>http://localhost:1313/p/torificate/</link>
         <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/torificate/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/torificate/torificate.jpg" alt="Featured image of post Torificate" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
+        <guid>http://localhost:1313/p/torificate/</guid>
+        <description>&lt;img src="http://localhost:1313/p/torificate/torificate.jpg" alt="Featured image of post Torificate" /&gt;&lt;h2 id=&#34;es&#34;&gt;ES
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Tipo de publicacion:&lt;/strong&gt; Guía&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vinculación:&lt;/strong&gt; Autor&lt;/p&gt;
 &lt;p&gt;Enlace: &lt;a href=&#34;https://tor.derechosdigitales.org/torificate/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://tor.derechosdigitales.org/torificate/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -64,11 +64,11 @@
         </item>
         <item>
         <title>SDA: Safe and documented for activism | SDA: Seguros y documentados para el activismo</title>
-        <link>https://guerracarlos.com/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</link>
+        <link>http://localhost:1313/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</link>
         <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
         
-        <guid>https://guerracarlos.com/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</guid>
-        <description>&lt;img src="https://guerracarlos.com/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/sda.png" alt="Featured image of post SDA: Safe and documented for activism | SDA: Seguros y documentados para el activismo" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
+        <guid>http://localhost:1313/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</guid>
+        <description>&lt;img src="http://localhost:1313/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/sda.png" alt="Featured image of post SDA: Safe and documented for activism | SDA: Seguros y documentados para el activismo" /&gt;&lt;h2 id=&#34;en&#34;&gt;EN
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Guide&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Involvement:&lt;/strong&gt; Author&lt;/p&gt;
 &lt;p&gt;Link: &lt;a href=&#34;https://sdamanual.org/&#34; target=&#34;_blank&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://sdamanual.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

@@ -4,10 +4,7 @@ title = "How to implement a remote SAFETAG audit: A step by step guide."
 date = "2020-12-04"
 description = "Blog post for SAFETAG"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "article",

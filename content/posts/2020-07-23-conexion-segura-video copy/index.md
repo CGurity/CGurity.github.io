@@ -4,14 +4,10 @@ title = "Conexión Segura en VIVO: Respondiendo TUS preguntas de seguridad y cen
 date = "2020-07-23"
 description = "Participación en streaming con preguntas sobre seguridad"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "event",
-    "collaborator",
     "presenter",
     "es",
 ]

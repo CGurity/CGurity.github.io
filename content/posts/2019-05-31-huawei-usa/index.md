@@ -4,10 +4,7 @@ title = "Dispositivos y sistemas: ¿Quién tiene el control?"
 date = "2019-05-31"
 description = "Artículo para Derechos Digitales"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "article",

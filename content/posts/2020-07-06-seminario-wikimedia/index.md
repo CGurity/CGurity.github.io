@@ -4,14 +4,10 @@ title = "Evasión de censura y anonimato en Internet - Carlos Guerra"
 date = "2020-07-06"
 description = "Como invitado por Wikimedia Argentina y Venezuela."
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "event",
-    "collaborator",
     "presenter",
     "es",
 ]

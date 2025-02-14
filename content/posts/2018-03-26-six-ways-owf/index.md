@@ -4,10 +4,7 @@ title = "6 Ways Being a Mozilla Fellow Has Changed My Life"
 date = "2018-03-26"
 description = "Blog post for Mozilla"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "article",

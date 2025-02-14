@@ -4,10 +4,7 @@ title = "#Venezuela: ¿Qué está pasando con los bloqueos en internet?"
 date = "2019-01-24"
 description = "Artículo para Derechos Digitales"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "article",

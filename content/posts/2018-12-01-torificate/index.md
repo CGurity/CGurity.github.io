@@ -4,10 +4,7 @@ title = "Torificate"
 date = "2018-12-01"
 description = "Guía para principiantes y usuarios avanzados de Tor. Guía para Derechos Digitales"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "guide",

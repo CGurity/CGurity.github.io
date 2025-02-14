@@ -4,10 +4,7 @@ title = "Contextualizing censorship measurements in Venezuela"
 date = "2017-04-20"
 description = "Internet Freedom Festival 2017 session with VeSinFiltro"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "event",

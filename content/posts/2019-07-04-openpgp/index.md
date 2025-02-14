@@ -4,10 +4,7 @@ title = "Sobre el ataque reportado a OpenPGP"
 date = "2019-07-04"
 description = "Artículo para Derechos Digitales"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "article",

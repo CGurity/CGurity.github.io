@@ -4,10 +4,7 @@ title = "My Year Being a Ford-Mozilla Open Web Fellow :)"
 date = "2018-08-27"
 description = "Blog post for Mozilla"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "article",

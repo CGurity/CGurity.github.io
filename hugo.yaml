@@ -1,7 +1,7 @@
 baseurl: https://guerracarlos.com/
 languageCode: en-us
 theme: stack
-title: Example Site
+title: Carlos Guerra
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -14,11 +14,11 @@ hasCJKLanguage: false
 languages:
     en:
         languageName: English
-        title: Example Site
+        title: Carlos Guerra
         weight: 1
         params:
             sidebar:
-                subtitle: Example description
+                subtitle: Digital security trainer, auditor, and advisor
 
 services:
     # Change it to your Disqus shortname before using
@@ -29,7 +29,7 @@ services:
         id:
 
 pagination:
-    pagerSize: 3
+    pagerSize: 10
 
 permalinks:
     posts: /p/:slug/
@@ -51,7 +51,7 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
+        emoji: 
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
             enabled: true
@@ -201,15 +201,21 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/CGurity
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: bluesky
+          name: Bluesky
+          url: https://bsky.app/profile/cguerra.bsky.social
           params:
-              icon: brand-twitter
+              icon: brand-bluesky
+        
+        - identifier: mastodon
+          name: Mastodon
+          url: https://mastodon.social/@CGurity
+          params:
+              icon: brand-mastodon
 
 related:
     includeNewer: true

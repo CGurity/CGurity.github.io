@@ -4,14 +4,11 @@ title = "MicroSD"
 date = "2019-11-01"
 description = "Micro consejos de seguridad para periodostas y comunicadoras. Aplicación para Derechos Digitales."
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "software",
-    "collaborator",
+    "contributor",
     "es",
 ]
 series = ["Themes Guide"]

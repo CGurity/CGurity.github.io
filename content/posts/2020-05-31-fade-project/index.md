@@ -4,10 +4,7 @@ title = "FADe Project: Fade Antenna Detection Project"
 date = "2020-05-31"
 description = "Research for South Lighthouse | Investigación para South Lighthouse."
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "research",

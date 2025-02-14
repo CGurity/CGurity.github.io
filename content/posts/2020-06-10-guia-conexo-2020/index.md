@@ -4,14 +4,11 @@ title = "Seguridad Digital: Conceptos y herramientas basicas"
 date = "2020-06-10"
 description = "Guía para Conexo"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "guide",
-    "collaborator",
+    "contributor",
     "es",
 ]
 series = ["Themes Guide"]

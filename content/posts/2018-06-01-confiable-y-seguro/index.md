@@ -4,15 +4,11 @@ title = "¿Confiable y seguro?"
 date = "2018-06-01"
 description = "Un vistazo a las potenciales vulnerabilidades de WhatsApp. Informe para Derechos Digitales."
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "research",
-    "collaborator",
-    "report",
+    "contributor",
     "es",
 ]
 series = ["Themes Guide"]

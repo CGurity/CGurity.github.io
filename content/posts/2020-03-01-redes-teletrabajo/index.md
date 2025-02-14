@@ -4,10 +4,7 @@ title = "Recomendaciones de seguridad en Redes caseras de cara al teletrabajo"
 date = "2020-03-01"
 description = "Guía para Derechos Digitales"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "guide",

@@ -4,10 +4,7 @@ title = "Manual rápido de OONI Probe para monitorear bloqueos de sitios y servi
 date = "2019-10-21"
 description = "Guía para Derechos Digitales"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "guide",

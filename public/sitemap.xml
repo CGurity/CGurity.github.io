@@ -2,140 +2,119 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://guerracarlos.com/categories/article/</loc>
+    <loc>http://localhost:1313/about-me/</loc>
+    <lastmod>2022-02-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2022-02-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/</loc>
+    <lastmod>2022-02-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/article/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/contributor/</loc>
+    <loc>http://localhost:1313/categories/contributor/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/tags/css/</loc>
+    <loc>http://localhost:1313/categories/en/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/en/</loc>
+    <loc>http://localhost:1313/p/how-to-implement-a-remote-safetag-audit-a-step-by-step-guide./</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2020-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/how-to-implement-a-remote-safetag-audit-a-step-by-step-guide./</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/tags/html/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/tags/markdown/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/posts/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/tags/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/tags/themes/</loc>
-    <lastmod>2020-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/categories/collaborator/</loc>
+    <loc>http://localhost:1313/p/conexi%C3%B3n-segura-en-vivo-respondiendo-tus-preguntas-de-seguridad-y-censura-en-internet/</loc>
     <lastmod>2020-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/conexi%C3%B3n-segura-en-vivo-respondiendo-tus-preguntas-de-seguridad-y-censura-en-internet/</loc>
+    <loc>http://localhost:1313/categories/es/</loc>
     <lastmod>2020-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/es/</loc>
+    <loc>http://localhost:1313/categories/event/</loc>
     <lastmod>2020-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/event/</loc>
+    <loc>http://localhost:1313/categories/presenter/</loc>
     <lastmod>2020-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/presenter/</loc>
-    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/p/evasi%C3%B3n-de-censura-y-anonimato-en-internet-carlos-guerra/</loc>
+    <loc>http://localhost:1313/p/evasi%C3%B3n-de-censura-y-anonimato-en-internet-carlos-guerra/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/guide/</loc>
+    <loc>http://localhost:1313/categories/guide/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/seguridad-digital-conceptos-y-herramientas-basicas/</loc>
+    <loc>http://localhost:1313/p/seguridad-digital-conceptos-y-herramientas-basicas/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/author/</loc>
+    <loc>http://localhost:1313/categories/author/</loc>
     <lastmod>2020-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/fade-project-fade-antenna-detection-project/</loc>
+    <loc>http://localhost:1313/p/fade-project-fade-antenna-detection-project/</loc>
     <lastmod>2020-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/research/</loc>
+    <loc>http://localhost:1313/categories/research/</loc>
     <lastmod>2020-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</loc>
+    <loc>http://localhost:1313/p/recomendaciones-de-seguridad-en-redes-caseras-de-cara-al-teletrabajo/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/microsd/</loc>
+    <loc>http://localhost:1313/p/microsd/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/software/</loc>
+    <loc>http://localhost:1313/categories/software/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</loc>
+    <loc>http://localhost:1313/p/manual-r%C3%A1pido-de-ooni-probe-para-monitorear-bloqueos-de-sitios-y-servicios-usando-tel%C3%A9fonos-android/</loc>
     <lastmod>2019-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/sobre-el-ataque-reportado-a-openpgp/</loc>
+    <loc>http://localhost:1313/p/sobre-el-ataque-reportado-a-openpgp/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/dispositivos-y-sistemas-qui%C3%A9n-tiene-el-control/</loc>
+    <loc>http://localhost:1313/p/dispositivos-y-sistemas-qui%C3%A9n-tiene-el-control/</loc>
     <lastmod>2019-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/pages/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/about/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/p/venezuela-cuando-el-atacante-es-el-gobierno/</loc>
+    <loc>http://localhost:1313/p/venezuela-cuando-el-atacante-es-el-gobierno/</loc>
     <lastmod>2019-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/phishing-by-venezuelan-government-puts-activists-and-internet-users-at-risk.-phishing-impulsado-por-el-gobierno-de-venezuela-pone-en-riesgo-a-activistas-y-usuarios-de-internet./</loc>
+    <loc>http://localhost:1313/p/phishing-by-venezuelan-government-puts-activists-and-internet-users-at-risk.-phishing-impulsado-por-el-gobierno-de-venezuela-pone-en-riesgo-a-activistas-y-usuarios-de-internet./</loc>
     <lastmod>2019-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/categories/report/</loc>
-    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guerracarlos.com/p/%23venezuela-qu%C3%A9-est%C3%A1-pasando-con-los-bloqueos-en-internet/</loc>
+    <loc>http://localhost:1313/p/%23venezuela-qu%C3%A9-est%C3%A1-pasando-con-los-bloqueos-en-internet/</loc>
     <lastmod>2019-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/torificate/</loc>
+    <loc>http://localhost:1313/p/torificate/</loc>
     <lastmod>2018-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/the-challenges-of-reporting/</loc>
+    <loc>http://localhost:1313/p/the-challenges-of-reporting/</loc>
     <lastmod>2018-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/my-year-being-a-ford-mozilla-open-web-fellow/</loc>
+    <loc>http://localhost:1313/p/my-year-being-a-ford-mozilla-open-web-fellow/</loc>
     <lastmod>2018-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/confiable-y-seguro/</loc>
+    <loc>http://localhost:1313/p/confiable-y-seguro/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</loc>
+    <loc>http://localhost:1313/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/6-ways-being-a-mozilla-fellow-has-changed-my-life/</loc>
+    <loc>http://localhost:1313/p/6-ways-being-a-mozilla-fellow-has-changed-my-life/</loc>
     <lastmod>2018-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/contextualizing-censorship-measurements-in-venezuela/</loc>
+    <loc>http://localhost:1313/p/contextualizing-censorship-measurements-in-venezuela/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/p/digital-security-guides-for-the-latin-american-society/</loc>
+    <loc>http://localhost:1313/p/digital-security-guides-for-the-latin-american-society/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guerracarlos.com/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url><url>
-    <loc>https://guerracarlos.com/categories/test/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

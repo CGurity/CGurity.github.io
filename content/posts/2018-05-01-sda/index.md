@@ -4,10 +4,6 @@ title = "SDA: Safe and documented for activism | SDA: Seguros y documentados par
 date = "2018-05-01"
 description = "Independent project for Ford-Mozilla Open Web Fellowship. | proyecto independiente en el marco del Ford-Mozilla Open Web Fellowship"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
 ]
 categories = [
     "guide",

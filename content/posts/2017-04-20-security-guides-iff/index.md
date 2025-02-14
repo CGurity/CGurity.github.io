@@ -4,10 +4,7 @@ title = "Digital security guides for the Latin American society"
 date = "2017-04-20"
 description = "Internet Freedom Festival 2017 session with Conexo."
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+    
 ]
 categories = [
     "event",

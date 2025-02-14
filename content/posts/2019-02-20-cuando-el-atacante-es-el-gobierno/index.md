@@ -4,14 +4,11 @@ title = "Venezuela: Cuando el atacante es el gobierno"
 date = "2019-02-20"
 description = "Ante la búsqueda gubernamental por menoscabar los derechos humanos en entornos digitales, frente a un clima político tan delicado, es importante entender cómo se han ido sofisticando los mecanismos de represión en entornos digitales hacia las personas venezolanas."
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+
 ]
 categories = [
     "article",
-    "collaborator",
+    "contributor",
     "es",
 ]
 series = ["Themes Guide"]
