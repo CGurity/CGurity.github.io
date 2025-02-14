@@ -196,7 +196,12 @@ params:
 ### See https://stack.jimmycai.com/config/menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
-    main: []
+    main: 
+        - name: Home
+          url: /
+          weight: -90
+          params:
+              icon: home
 
     social:
         - identifier: github
