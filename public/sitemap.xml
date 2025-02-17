@@ -17,13 +17,22 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/p/drapac24-security-audit-co-learning-session/</loc>
+    <lastmod>2023-01-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/en/</loc>
+    <lastmod>2023-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/event/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/maldocs-series/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2023-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/speaker/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -60,9 +69,6 @@
     <lastmod>2020-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/es/</loc>
-    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/event/</loc>
     <lastmod>2020-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/presenter/</loc>

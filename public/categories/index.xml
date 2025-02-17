@@ -31,6 +31,22 @@
         <description>&lt;img src="http://localhost:1313/categories/en/en.png" alt="Featured image of post EN" /&gt;</description>
         </item>
         <item>
+        <title>Event</title>
+        <link>http://localhost:1313/categories/event/</link>
+        <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/event/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/event/event.jpg" alt="Featured image of post Event" /&gt;</description>
+        </item>
+        <item>
+        <title>Speaker</title>
+        <link>http://localhost:1313/categories/speaker/</link>
+        <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/speaker/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Guide</title>
         <link>http://localhost:1313/categories/guide/</link>
         <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
@@ -53,14 +69,6 @@
         
         <guid>http://localhost:1313/categories/es/</guid>
         <description>&lt;img src="http://localhost:1313/categories/es/es.png" alt="Featured image of post ES" /&gt;</description>
-        </item>
-        <item>
-        <title>Event</title>
-        <link>http://localhost:1313/categories/event/</link>
-        <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/event/</guid>
-        <description>&lt;img src="http://localhost:1313/categories/event/event.jpg" alt="Featured image of post Event" /&gt;</description>
         </item>
         <item>
         <title>Presenter</title>
