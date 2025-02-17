@@ -1,0 +1,19 @@
+[data-scheme="light"] {
+    .article-content h3, .article-content h1 {
+        background-color: aliceblue;
+    }
+
+    .article-content h4, .article-content h2 {
+        background-color: antiquewhite;
+    }
+}
+
+[data-scheme="dark"] {
+    .article-content h3, .article-content h1 {
+        background-color: blueviolet;
+    }
+
+    .article-content h4, .article-content h2 {
+        background-color: cadetblue;
+    }
+}

@@ -5,6 +5,15 @@
         <link>http://localhost:1313/tags/</link>
         <description>Recent content in Tags on Carlos Guerra</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+        <language>en</language>
+        <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Maldocs-Series</title>
+        <link>http://localhost:1313/tags/maldocs-series/</link>
+        <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/maldocs-series/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>

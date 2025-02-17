@@ -162,7 +162,8 @@ params:
             - type: tag-cloud
               params:
                   limit: 10
-        pages:
+            - type: toc
+        page:
             - type: toc
 
     opengraph:

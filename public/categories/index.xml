@@ -6,13 +6,37 @@
         <description>Recent content in Categories on Carlos Guerra</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Article</title>
         <link>http://localhost:1313/categories/article/</link>
-        <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+        <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/article/</guid>
         <description>&lt;img src="http://localhost:1313/categories/article/article.png" alt="Featured image of post Article" /&gt;</description>
+        </item>
+        <item>
+        <title>Author</title>
+        <link>http://localhost:1313/categories/author/</link>
+        <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/author/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/author/author.jpg" alt="Featured image of post Author" /&gt;</description>
+        </item>
+        <item>
+        <title>EN</title>
+        <link>http://localhost:1313/categories/en/</link>
+        <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/en/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/en/en.png" alt="Featured image of post EN" /&gt;</description>
+        </item>
+        <item>
+        <title>Guide</title>
+        <link>http://localhost:1313/categories/guide/</link>
+        <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/guide/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/guide/guide.jpg" alt="Featured image of post Guide" /&gt;</description>
         </item>
         <item>
         <title>Contributor</title>
@@ -21,14 +45,6 @@
         
         <guid>http://localhost:1313/categories/contributor/</guid>
         <description>&lt;img src="http://localhost:1313/categories/contributor/contributor.jpg" alt="Featured image of post Contributor" /&gt;</description>
-        </item>
-        <item>
-        <title>EN</title>
-        <link>http://localhost:1313/categories/en/</link>
-        <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/en/</guid>
-        <description>&lt;img src="http://localhost:1313/categories/en/en.png" alt="Featured image of post EN" /&gt;</description>
         </item>
         <item>
         <title>ES</title>
@@ -53,22 +69,6 @@
         
         <guid>http://localhost:1313/categories/presenter/</guid>
         <description>&lt;img src="http://localhost:1313/categories/presenter/presenter.jpg" alt="Featured image of post Presenter" /&gt;</description>
-        </item>
-        <item>
-        <title>Guide</title>
-        <link>http://localhost:1313/categories/guide/</link>
-        <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/guide/</guid>
-        <description>&lt;img src="http://localhost:1313/categories/guide/guide.jpg" alt="Featured image of post Guide" /&gt;</description>
-        </item>
-        <item>
-        <title>Author</title>
-        <link>http://localhost:1313/categories/author/</link>
-        <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/author/</guid>
-        <description>&lt;img src="http://localhost:1313/categories/author/author.jpg" alt="Featured image of post Author" /&gt;</description>
         </item>
         <item>
         <title>Research</title>

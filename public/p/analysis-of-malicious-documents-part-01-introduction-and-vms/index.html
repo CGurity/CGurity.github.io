@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="This series was posted originally in the Greater Internet Freedom program website, this is a copy for archiving purposes Intro This (mini)course is aimed at those digital security enthusiasts and practitioners (technical support, facilitators, first responders, etc.) that want to learn more about malicious documents and how to identify them. These documents can be email attachments, files on flash drives, or downloads from specific websites. The main goals are:">
+<title>Analysis of malicious documents – Part 01 – Introduction and VMs</title>
+
+<link rel='canonical' href='http://localhost:1313/p/analysis-of-malicious-documents-part-01-introduction-and-vms/'>
+
+<link rel="stylesheet" href="/scss/style.min.b28523dc9ab58fa061e5c1d3fc4cf0b596658650e50850a9e38bb46d54fd77ef.css"><meta property='og:title' content="Analysis of malicious documents – Part 01 – Introduction and VMs">
+<meta property='og:description' content="This series was posted originally in the Greater Internet Freedom program website, this is a copy for archiving purposes Intro This (mini)course is aimed at those digital security enthusiasts and practitioners (technical support, facilitators, first responders, etc.) that want to learn more about malicious documents and how to identify them. These documents can be email attachments, files on flash drives, or downloads from specific websites. The main goals are:">
+<meta property='og:url' content='http://localhost:1313/p/analysis-of-malicious-documents-part-01-introduction-and-vms/'>
+<meta property='og:site_name' content='Carlos Guerra'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='maldocs-series' /><meta property='article:published_time' content='2023-01-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-01-01T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/analysis-of-malicious-documents-part-01-introduction-and-vms/6.jpg' />
+<meta name="twitter:title" content="Analysis of malicious documents – Part 01 – Introduction and VMs">
+<meta name="twitter:description" content="This series was posted originally in the Greater Internet Freedom program website, this is a copy for archiving purposes Intro This (mini)course is aimed at those digital security enthusiasts and practitioners (technical support, facilitators, first responders, etc.) that want to learn more about malicious documents and how to identify them. These documents can be email attachments, files on flash drives, or downloads from specific websites. The main goals are:"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/analysis-of-malicious-documents-part-01-introduction-and-vms/6.jpg' />
+  
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu99184f921ef7b179b9ae7ead5236baa2_57844_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Carlos Guerra</a></h1>
+            <h2 class="site-description">Digital security trainer, auditor, and advisor</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://bsky.app/profile/cguerra.bsky.social'
+                        target="_blank"
+                        title="Bluesky"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/CGurity'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://mastodon.social/@CGurity'
+                        target="_blank"
+                        title="Mastodon"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about-me/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About me</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#intro">Intro</a></li>
+    <li><a href="#structure">Structure</a></li>
+    <li><a href="#disclaimers">Disclaimers</a>
+      <ol>
+        <li><a href="#disclaimer-quiz">Disclaimer quiz</a></li>
+      </ol>
+    </li>
+    <li><a href="#about-threat-models">About threat models</a>
+      <ol>
+        <li><a href="#threat-model-quiz">Threat model quiz</a></li>
+      </ol>
+    </li>
+    <li><a href="#environment-general-considerations">Environment: General considerations</a>
+      <ol>
+        <li><a href="#isolated-environment-and-other-good-practices">Isolated environment and other good practices</a></li>
+        <li><a href="#other-considerations">Other considerations</a></li>
+        <li><a href="#environment-quiz">Environment quiz</a></li>
+      </ol>
+    </li>
+    <li><a href="#environment-example-remnux--virtualbox">Environment example: Remnux + Virtualbox</a>
+      <ol>
+        <li><a href="#installing-virtualbox">Installing Virtualbox</a></li>
+        <li><a href="#installing-remnux">Installing Remnux</a></li>
+      </ol>
+    </li>
+    <li><a href="#extra-configurations-on-virtualbox----network">Extra configurations on Virtualbox &ndash; Network</a></li>
+    <li><a href="#extra-configurations-on-virtualbox----sharing-information-with-the-host-machine">Extra configurations on Virtualbox &ndash; Sharing information with the host machine</a></li>
+    <li><a href="#extra-configurations-on-virtualbox----snapshots">Extra configurations on Virtualbox &ndash; Snapshots</a></li>
+    <li><a href="#whats-next">What&rsquo;s next</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/">
+                <img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/6_hu71091bd9fd3cc51e63e3804503417e43_60794_800x0_resize_q75_box.jpg"
+                        srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/6_hu71091bd9fd3cc51e63e3804503417e43_60794_800x0_resize_q75_box.jpg 800w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/6_hu71091bd9fd3cc51e63e3804503417e43_60794_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="455" 
+                        loading="lazy"
+                        alt="Featured image of post Analysis of malicious documents – Part 01 – Introduction and VMs" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/guide/" style="background-color: #00798C; color: #fff;">
+                Guide
+            </a>
+        
+            <a href="/categories/author/" style="background-color: #D1495B; color: #fff;">
+                Author
+            </a>
+        
+            <a href="/categories/en/" style="background-color: #30638E; color: #fff;">
+                EN
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/">Analysis of malicious documents – Part 01 – Introduction and VMs</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 01, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    17 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <blockquote>
+<p>This series was posted originally in the <a class="link" href="https://greaterinternetfreedom.org/course/part01-intro-and-vms/"  target="_blank" rel="noopener"
+    >Greater Internet Freedom program website</a>, this is a copy for archiving purposes</p>
+</blockquote>
+<h2 id="intro">Intro
+</h2><p>This (mini)course is aimed at those digital security enthusiasts and practitioners (technical support, facilitators, first responders, etc.) that want to learn more about malicious documents and how to identify them. These documents can be email attachments, files on flash drives, or downloads from specific websites. The main goals are:</p>
+<ul>
+<li>Learn the basics of how common document formats work and how they can be weaponized, with special emphasis on Portable Document Format files (PDF) and Microsoft Office documents (from at least MS Word, Excel, and PowerPoint).</li>
+<li>Introduce a few tools that might help identify signs of dangerous documents or confirm that they are safe to open.</li>
+<li>Provide some security advice and clarify common doubts about handling suspicious files.</li>
+</ul>
+<p>This course uses the format of short reads and quizzes in most of the covered content, where depending on the material, it will be necessary to run some tools. This will be covered in the section Working environment shortly after the introduction, the general requirements are:</p>
+<ul>
+<li>To complete the proposed exercises:
+<ul>
+<li>Capacity of running 1) a virtual machine in the computer using Virtualbox or similar software, or 2) python scripts (only to analyze the course files, not to analyze real samples).</li>
+</ul>
+</li>
+<li>The time to cover the material (approximately 2 hours)</li>
+</ul>
+<p>This course takes materials available in other references, and only uses tools that are freely available. Most of the content is inspired by the work <a class="link" href="https://twitter.com/DidierStevens"  target="_blank" rel="noopener"
+    >Didier Stevens</a> has done over time, especially for SANS, as well as other references, a shortlist might be:</p>
+<ul>
+<li><a class="link" href="https://blog.didierstevens.com/2011/05/25/malicious-pdf-analysis-workshop-screencasts/"  target="_blank" rel="noopener"
+    >https://blog.didierstevens.com/2011/05/25/malicious-pdf-analysis-workshop-screencasts/</a></li>
+<li><a class="link" href="https://github.com/filipi86/MalwareAnalysis-in-PDF"  target="_blank" rel="noopener"
+    >https://github.com/filipi86/MalwareAnalysis-in-PDF</a> </li>
+<li><a class="link" href="https://www.sentinelone.com/blog/malicious-pdfs-revealing-techniques-behind-attacks/"  target="_blank" rel="noopener"
+    >https://www.sentinelone.com/blog/malicious-pdfs-revealing-techniques-behind-attacks/</a> </li>
+<li><a class="link" href="https://www.youtube.com/watch?v=opdVFQEBCNU"  target="_blank" rel="noopener"
+    >https://www.youtube.com/watch?v=opdVFQEBCNU</a></li>
+</ul>
+<h2 id="structure">Structure
+</h2><ol>
+<li>Disclaimers</li>
+<li>Some threat modeling considerations</li>
+<li>For each kind of file format (PDFs, MS Office)
+<ol>
+<li>How they are structured (in a more technical way)</li>
+<li>How they can be weaponized</li>
+<li>How we can do an introductory analysis</li>
+<li>Some conclusions/facts about the file format</li>
+</ol>
+</li>
+<li>Some general advice against the related threats</li>
+<li>What&rsquo;s next</li>
+</ol>
+<p>Up next, a series of useful disclaimers before starting with the material</p>
+<h2 id="disclaimers">Disclaimers
+</h2><p>Given the nature of the task we will perform after mastering the content provided (analyzing malicious and dangerous files), and the complexity of the topic (that we see as an introduction to malware analysis), we strongly recommend reading this section and agree with all the items before moving forward.</p>
+<ol>
+<li>This course is introductory: it is designed for people without previous experience in suspicious document analysis. In the Next steps section, we included a list of resources for further reading and reference.</li>
+<li>This course is not covering many advanced techniques: there are many specific threats whose complexity goes beyond the scope of this material, also, as in everything information security-related, there might be threats waiting to be discovered that won&rsquo;t be covered in this course. We recommend looking for help in case we suspect we are seeing an advanced or unknown threat in a file or any other artifact, more of that in a later section. That said, this course will help us understand better how a benign file usually looks like, instead of how every malicious document is structured.</li>
+<li>Take your precautions when analyzing real files: the samples used in this course are harmless, that said, repeating the presented workflows in real samples without the respective security measured, most probably will result in your device being infected. Please don&rsquo;t run any suspicious file in your main computer, use a virtual machine, a dedicated device, or an environment where you can&rsquo;t execute the file on your machine but only analyze its properties.</li>
+</ol>
+<h3 id="disclaimer-quiz">Disclaimer quiz
+</h3><p>Question 1: I understand the risks of analyzing suspicious files, the potential consequences of running malware on purpose or accidentally, I read the content of this page/section, and I understand the most common strategies to address these potential threats.</p>
+<p>Question 2: Which one of the following options describes best what we need to do when analyzing a real suspicious file?<br>
+1. We should start a virtual machine (VM) or dedicated computer to analyze the file and give it as little access as possible to our host machine and the rest of the network</p>
+<p>2. We can analyze the file in our own computer/environment but without having access to the internet</p>
+<p>3. We should analyze the file in a computer or virtual machine (VM) with less common Operating Systems like Linux or macOS</p>
+<h2 id="about-threat-models">About threat models
+</h2><p>When looking for advice on how to deal with suspicious files, usually the proposed approach is to avoid any interaction with the files, for instance:</p>
+<ul>
+<li>Don&rsquo;t open unknown files.</li>
+<li>Don&rsquo;t interact with suspicious files.</li>
+<li>Don&rsquo;t make eye contact with any suspicious file.</li>
+</ul>
+<p>Or, we can find another kind of advice that, while is enough for most people, could be misleading to sensitive users like Human Rights activists or journalists working in dangerous environments, or plainly counterproductive, for instance:</p>
+<ul>
+<li>Using an Antivirus is enough to protect you from malicious files.</li>
+<li>Only Microsoft Office documents with macros are dangerous, so you can treat other kinds of files without worrying too much.</li>
+<li>Delete any email with suspicious attachments. This one is particularly concerning in some scenarios because if we delete the emails and attachments from our inbox, we lose key evidence that can help us assess if the artifacts are indeed malicious or targeted, which might be invaluable information.</li>
+</ul>
+<p>In practice, when we are working with targeted communities (especially journalists), not interacting with files is not an option. Many organizations, groups, and individuals need to open potentially dangerous files as part of their job, and they will do it even knowing the risks, some examples:</p>
+<ul>
+<li>Journalists receive a press conference invitation.</li>
+<li>Activists receive a support document as evidence in a human rights violation case or as a leak.</li>
+<li>An adversarial institution sends a document that should be reviewed and addressed.</li>
+</ul>
+<p>One extra factor to consider is that civil society actors are exposed to targeted threats unknown by Antivirus engines. Another one is that depending on the kind of attack; other file formats might be weaponized as well. These factors are essential to be considered by people helping vulnerable groups to better understand how documents and other common file formats might be weaponized, to give useful advice, but also to help them analyze specific files to understand and assess if they are being victims of targeted attacks.</p>
+<p>With all of this in mind, we will be focusing on understanding how standard file formats are structured, how to spot the most common attacks using them, and some updated defensive measures to avoid being victims of this kind of threat.</p>
+<h3 id="threat-model-quiz">Threat model quiz
+</h3><p>Question 1: For a highly targeted organization receiving many Microsoft Office documents via email, which one of the following options is true? (Only one is correct)<br>
+1. Even if the antivirus (AV) software says the file is safe, it might still contain malware.</p>
+<p>2. They need to delete any suspicious attachments immediately because it could be dangerous to have them in the inbox.</p>
+<p>3. They should not open any attachments from unknown sources.</p>
+<h2 id="environment-general-considerations">Environment: General considerations
+</h2><p>To execute most tasks on this course we&rsquo;ll use basic tools written in the Python programming language, given the wide compatibility of Python with every Operating System, there are countless ways we can set up an environment, we propose one specifically but if you are familiar with Python, malware analysis, and/or virtualization you can set up a different version that works for you. The only strong ask would be to have an isolated environment to manipulate dangerous artifacts (files in this case), there are other considerations, but probably this is the most important one.</p>
+<h3 id="isolated-environment-and-other-good-practices">Isolated environment and other good practices
+</h3><p>The samples used in this course are harmless, only to demonstrate how the files are structured and how to spot red flags, however, if you intend to analyze real files, chances are that you will find an infected one that could cause all kinds of problems, like infecting the computer you are using, compromising your information, or making your device unusable, among others. That said, is common practice to have an environment exclusively to analyze and run suspicious samples in a controlled way, so if anything goes wrong while manipulating the sample, you won&rsquo;t affect your device or the information contained in it. </p>
+<p>Another advantage of having a dedicated environment is that after you manipulate malware samples, you can delete everything and start over without the fear of losing unrelated files. This allows us to plan practical ways to &ldquo;reset&rdquo; our environment to a ready-to-go state before each analysis.</p>
+<p>One of the most used strategies to guarantee an isolated environment is using virtual machines (VMs), which basically emulate a complete computer inside another computer, including the Operating System (OS), hard drives, screen, etc. Common tools to set up and use VMs are <a class="link" href="https://www.virtualbox.org/"  target="_blank" rel="noopener"
+    >Virtualbox</a> and <a class="link" href="https://www.vmware.com/cl/products/workstation-player.html"  target="_blank" rel="noopener"
+    >VMware Workstation Player</a>, among others. Using dedicated hardware is also an option as long as it is secured in case of infection.</p>
+<p>One potential disadvantage could be that some malware include code to check if they are executed in isolated environments and not run, making it more difficult to analyze it, however, the inherent danger of running malware in our everyday environments doesn&rsquo;t worth even trying, we recommend looking for help, focusing on techniques that don&rsquo;t rely on running the suspicious files, or getting information on how to set up an environment that looks like a real machine for a malware sample. For this resource, this shouldn&rsquo;t be a problem since we won&rsquo;t be executing any code from documents, but if you want to learn and conduct dynamic analysis on suspicious files, this will be useful.</p>
+<h3 id="other-considerations">Other considerations
+</h3><p>Besides the good practice of having an isolated environment, other common practices are:</p>
+<ul>
+<li>Make sure the computer you are using is not connected to the internet or the local network: especially if you are opening suspicious files, the most frequent reason to do this is to avoid triggering signals that will alert malware operators that the code is being executed or tested according to other data like the IP address, or type of device executing the malware. Also, some malware will try to propagate to the local network, trying to infect other unintended devices, so it&rsquo;s a common practice to isolate testing devices in different physical or virtual networks (or VLANs). Keep in mind that in case of analyzing a sample by executing it, it is possible that the malware detects it doesn&rsquo;t have access to the Internet and not run.</li>
+<li>If you will connect to the internet, use a VPN or similar: the idea is to hide your real location in case the malware we are analyzing runs and signals their operators. Again, it is not usually recommended to execute malware without measures to avoid any potential communication with operators, however, using a VPN might be a good measure in case of accidental execution or if other configurations fail at some point.</li>
+<li>Arrange a process to reset your environment to a &ldquo;clean&rdquo; state: Depending on if you are using a Virtual Machine or dedicated hardware, there are some tools and features that are useful to reset the environment so every time you analyze a sample, the machine will be clean, for VMs using snapshots are a good example, and there is software to reverse a physical computer to a previous state.</li>
+<li>Stick to static analysis: In general, we can divide malware analysis depending on if we are executing the samples or not. Static analysis tries to dissect the files and other artifacts to gather as much insight as possible without executing them, while dynamic analysis executes the samples to see what changes in the testing environment. Depending on the kind of malware, one kind of analysis might be more useful than the other, but in general, dynamic analysis will require more measures to protect the testing environment and the network to be able to support the execution of real malware. This course only shows static analysis techniques.</li>
+<li>Be careful when publishing samples or other information of the analyzed samples: In general, this might alert malware operators about us analyzing the malware campaign, making them shut down the infrastructure, cleaning any traces to make attribution more difficult, etc. This applies to any public platform like social media, and websites, including some public platforms where we can send files to analyze them on the cloud looking for flags from Antivirus engines and the information security community. For the last scenario, we&rsquo;ll share some examples and techniques to check the information we need without alerting anybody.</li>
+</ul>
+<h3 id="environment-quiz">Environment quiz
+</h3><p>Question 1: Which one of the following statements is true?<br>
+<details>
+    <summary>1. Running samples will require fewer security measures than trying to dissect the artifacts to look for useful insight.</summary>
+    <div><strong>Incorrect</strong> &ndash; Executing malware will infect the environment we are using, causing things like notifying the creators, the malware trying to infect other devices in the network, and making the device unusable. All of these consequences require more security measures than analyzing the sample without executing it (known as Static Analysis)</div>
+</details></p>
+<p><details>
+    <summary>2. Cutting access to the internet will make it harder for a malware sample to notify the creators that it has been executed.</summary>
+    <div><strong>Correct</strong> – Without internet access, the malware won’t be able to communicate with external servers to execute certain actions, including notifying its execution. It is good to know as well that some malware use the internet to download other parts of its code, so cutting access might also be a problem because we won’t have insight into the entire functionality without obtaining the missing pieces. However, the risks associated with running accidentally the malware, make it better to be disconnected and see during the analysis if we are missing something important.</div>
+</details>
+<br>
+<details>
+    <summary>3. The most efficient way to analyze malware is using Virtual Machines because if the machine gets infected we can create them again from scratch.</summary>
+    <div><strong>Incorrect</strong> – What makes VMs more efficient to use for malware analysis, is the ability to take “snapshots”, so we can take one capture of the state of a VM before we start the analysis, and when finished we can revert the VM to that snapshot, so we are ready to analyze the next sample in a controlled way. This is way faster than recreating the VM from scratch every time. (This was a tricky one to be honest)</div>
+</details></p>
+<h2 id="environment-example-remnux--virtualbox">Environment example: Remnux + Virtualbox
+</h2><p>In case you want a functional environment ready to go, we recommend using Remnux, a downloadable virtual machine (VM) preconfigured with some useful tools for malware analysis. Here we will use Virtualbox to virtualize the Remnux machine, if you are familiar with this process, feel free to jump to the next section of the course.</p>
+<h3 id="installing-virtualbox">Installing Virtualbox
+</h3><p>First, we will need a program to manage our virtual machines, we chose Virtualbox because is the most used solution that is compatible with the three main platforms (Windows, macOS, and Linux) and is free. To download the respective installer visit <a class="link" href="https://www.virtualbox.org/"  target="_blank" rel="noopener"
+    >https://www.virtualbox.org/</a> and look for the big blue button. Then, look for the section with the packages by platform as shown in the image.</p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/1.jpg"
+	width="768"
+	height="408"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/1_hufb73d89a2e8ddc9b3cc40ecc459e03fe_51686_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/1_hufb73d89a2e8ddc9b3cc40ecc459e03fe_51686_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="188"
+		data-flex-basis="451px"
+	
+></p>
+<p>Here, click on your platform, and follow the instructions. After that, you can run Virtualbox and see a window like this one</p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/2.jpg"
+	width="768"
+	height="598"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/2_hu321f75fb4743f855e15e9b6b547a5c3a_32130_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/2_hu321f75fb4743f855e15e9b6b547a5c3a_32130_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="128"
+		data-flex-basis="308px"
+	
+></p>
+<p>You won&rsquo;t have anything yet in the blurred area, from here we are ready to download and install Remnux</p>
+<h3 id="installing-remnux">Installing Remnux
+</h3><p>Now, you can go to <a class="link" href="https://remnux.org/"  target="_blank" rel="noopener"
+    >https://remnux.org/</a> and click on &ldquo;Download&rdquo; In the corresponding section. It is possible that you get redirected to another page asking you to select if you want to download a General OVA or a Virtualbox OVA, in our case, the last will be the correct one.</p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/3.jpg"
+	width="791"
+	height="534"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/3_hubb8fc204439f07f7e71f2c0eb3c1ac53_84832_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/3_hubb8fc204439f07f7e71f2c0eb3c1ac53_84832_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="148"
+		data-flex-basis="355px"
+	
+></p>
+<blockquote>
+<p>After downloading the file, it is recommended to check if the file was downloaded correctly, to do this, we need to check the associated hash of the file. Hashing is a dense topic we encourage to learn and apply (also it is very used in malware analysis), but for now, we can summarize it as a mathematical process that transform a piece of data (like a text, or a file), into an alphanumerical code, this code should be unique to the data you are analyzing, and even with small changes, the hash will change a lot, so checking that our downloaded file has the same hash published in the Remnux website, will tell us that the file was downloaded without issues, if the hash is different, it would be a sign that the file was corrupted because a faulty download process or somehow it is not the correct file (maybe an error on our side selecting the right version, or as a remote scenario, someone changed the file for a malicious version, so be alert). A quick reference on how to check hashes is available at <a class="link" href="https://technastic.com/check-md5-checksum-hash/"  target="_blank" rel="noopener"
+    >https://technastic.com/check-md5-checksum-hash/</a></p>
+</blockquote>
+<p>After checking that our file was downloaded without issues, now we can import it into Virtualbox, in the Remnux page where we downloaded the VM, there are instructions available, however, it is enough with double-clicking the .ova file, and a wizard will guide us through the import process. We can leave everything as suggested in the proposed configuration. In the end, we should see the Remnux machine in our Virtualbox window. Clicking &ldquo;Start&rdquo; will turn on our machine in a separate window. This is a Linux machine, and to log in the user is <em>remnux</em> and the password <em>malware <em>(however, it is possible that the session will be open without prompting for credentials)</em>.</em></p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/4.jpg"
+	width="768"
+	height="598"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/4_hu775c8cb7a6d76fccf162c409e4c6813d_33988_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/4_hu775c8cb7a6d76fccf162c409e4c6813d_33988_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="128"
+		data-flex-basis="308px"
+	
+></p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/5.jpg"
+	width="768"
+	height="575"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/5_hu8f3dbc7a174dd3e379f9f9f068e75536_24563_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/5_hu8f3dbc7a174dd3e379f9f9f068e75536_24563_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+<h2 id="extra-configurations-on-virtualbox----network">Extra configurations on Virtualbox &ndash; Network
+</h2><p>Given that we will be analyzing potentially harmful files, it is not advisable to run the machine in a way that can communicate with the rest of our network, the specific strategy might vary depending on the style of the analyst, however the configuration is done mostly in the interfaces screen of out VM. With our Remnux machine powered off, we click the button &ldquo;Settings&rdquo; in the toolbar.</p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/6.jpg"
+	width="809"
+	height="460"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/6_hu71091bd9fd3cc51e63e3804503417e43_60794_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/6_hu71091bd9fd3cc51e63e3804503417e43_60794_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="175"
+		data-flex-basis="422px"
+	
+></p>
+<p>Then in the “Network” section, you will have a series of options, the most important are:</p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/7.jpg"
+	width="647"
+	height="529"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/7_hu2f68b0dac8bb3776935d69dc2f7691c2_76825_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/7_hu2f68b0dac8bb3776935d69dc2f7691c2_76825_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+<ul>
+<li>Enable Network Adapter: disabling this will eliminate any connectivity between our VM and other devices through the network (Including ours, we will manage it using the graphic interface), it will emulate the absence of hardware to connect to any networks in the VM.</li>
+<li>Attached to &ndash; NAT: The default configuration, will emulate a new network for the VM, this allows it to access the internet, but also other devices of our network, this is not recommended for the kind of use we will give our VM.</li>
+<li>Attached to &ndash; Bridged Adapter: This will share the network adapter of our physical host computer to the VM, putting it like any other device on our network. This one is also not recommended for our use case.</li>
+<li>Attached to &ndash; Host-only Adapter: this attaches the VM to a network that is only connected to only our host machine and other VMs with the same configuration, in some cases this might be useful, however, this can also expose our machine to malicious activity.</li>
+<li>Attached to &ndash; Internal Network: similar to the last one but our host machine is not accessible, this is useful when we want to see how two or more machines interact with each other.</li>
+<li>Attached to &ndash; Not attached: This emulates a network adapter without a cable connected to it</li>
+</ul>
+<p>Depending on the use we will give to our machine, for initial configuration we can keep NAT enabled to access the Internet to download tools, etc., and before starting our analysis, we can change it to Not attached, Internal Network, or disable the adapter.</p>
+<h2 id="extra-configurations-on-virtualbox----sharing-information-with-the-host-machine">Extra configurations on Virtualbox &ndash; Sharing information with the host machine
+</h2><p>It is very usual to share files and other data between our computer and the VM, again, there are different approaches we can adopt:Shared folders: similar to a network shared folder, we can synchronize one folder between our host and our guest system (the Virtual Machine). This is not always recommended to share malware samples because it will open a space in our computer that is controlled by our VM, which can be infected in moments of our analysis. To configure shared folders there is a dedicated section in the settings.</p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/8.jpg"
+	width="647"
+	height="529"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/8_hu966cc357db4174eccc3dbb5e7259f228_67299_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/8_hu966cc357db4174eccc3dbb5e7259f228_67299_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+<ul>
+<li>Shared clipboard and Drag and Drop: This will let us share the clipboard between our computer and the VM, this can be disabled, be unidirectional, or bidirectional as suggested in the image. Similar for dragging and dropping files between the host and the guest systems. For some, disabling sharing folders and enabling drag and drop only from &ldquo;Host to Guest&rdquo; is the most secure option to protect out physical computers, similar with the clipboard sharing, however, in some moments we might need to extract information from the VM.</li>
+</ul>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/9.jpg"
+	width="768"
+	height="576"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/9_hu7e9aabf7c3c781e998fa46af0d85f697_33515_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/9_hu7e9aabf7c3c781e998fa46af0d85f697_33515_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+<h2 id="extra-configurations-on-virtualbox----snapshots">Extra configurations on Virtualbox &ndash; Snapshots
+</h2><p>One very useful feature of Virtualbox, is to save a version of the VM we can revert to at any given point in the future, so for instance, if we configure the Remnux machine to analyze malware, we might want to save a Snapshot before starting the analysis, so when we are over, we can revert the VM to the saved snapshot to be sure the machine is not infected, and we are ready to continue analyzing.</p>
+<p>To save a snapshot, with the machine in the desired state click &ldquo;Machine&rdquo;, then &ldquo;Take Snapshot&rdquo;</p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/10.jpg"
+	width="768"
+	height="576"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/10_hu607c4c03f149428778bedeef4b55d4c3_32485_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/10_hu607c4c03f149428778bedeef4b55d4c3_32485_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+<p>Then select a name and click “OK”, it will take some time to build the snapshot and after that it will be available on the Snapshots section on the Virtualbox main screen for our VM.</p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/11.jpg"
+	width="862"
+	height="392"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/11_hu165aae507f0ddcb8654f13e2be9f15d0_44226_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/11_hu165aae507f0ddcb8654f13e2be9f15d0_44226_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="219"
+		data-flex-basis="527px"
+	
+></p>
+<p>We can use the “Restore” button on the respective screen</p>
+<p><img src="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/12.jpg"
+	width="768"
+	height="598"
+	srcset="/p/analysis-of-malicious-documents-part-01-introduction-and-vms/12_hu9e4c9956d0d6b62d6e5746ce93fe56d0_31498_480x0_resize_q75_box.jpg 480w, /p/analysis-of-malicious-documents-part-01-introduction-and-vms/12_hu9e4c9956d0d6b62d6e5746ce93fe56d0_31498_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="128"
+		data-flex-basis="308px"
+	
+></p>
+<h2 id="whats-next">What&rsquo;s next
+</h2><p>Given that we can handle the basics with Virtualbox, we can learn about Remnux while understanding and analyzing our first file format: <a class="link" href="/p/analysis-of-malicious-documents-part-02-pdf-documents/" >PDFs</a>.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/maldocs-series/">Maldocs-Series</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/analysis-of-malicious-documents-part-04-defensive-measures-next-steps-and-closure/">
+        
+        
+            <div class="article-image">
+                <img src="/p/analysis-of-malicious-documents-part-04-defensive-measures-next-steps-and-closure/1.aeb286b75baecbb347674d142d4c8f99_hu47a86cfd803a9df7c9cd05ac2ffab0be_30367_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Analysis of malicious documents – Part 04 – Defensive measures, next steps, and closure"
+                        
+                        data-hash="md5-rrKGt1uuy7NHZ00ULUyPmQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Analysis of malicious documents – Part 04 – Defensive measures, next steps, and closure</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/analysis-of-malicious-documents-part-03-microsoft-office-documents/">
+        
+        
+            <div class="article-image">
+                <img src="/p/analysis-of-malicious-documents-part-03-microsoft-office-documents/11.c0e4f96763858472ba13168bd8c9d580_hu26eed9cc7c1228930433ac93552fb2d8_79691_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Analysis of malicious documents – Part 03 – Microsoft Office documents"
+                        
+                        data-hash="md5-wOT5Z2OFhHK6ExaL2MnVgA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Analysis of malicious documents – Part 03 – Microsoft Office documents</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/analysis-of-malicious-documents-part-02-pdf-documents/">
+        
+        
+            <div class="article-image">
+                <img src="/p/analysis-of-malicious-documents-part-02-pdf-documents/13.9fc6d1d131919eee16849d6694281c26_hu240fb05a8481aa980793c3ec9617edae_85474_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Analysis of malicious documents – Part 02 – PDF documents"
+                        
+                        data-hash="md5-n8bR0TGRnu4WhJ1mlCgcJg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Analysis of malicious documents – Part 02 – PDF documents</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/">
+        
+        
+            <div class="article-image">
+                <img src="/p/sda-safe-and-documented-for-activism-sda-seguros-y-documentados-para-el-activismo/sda.20fce1dedb42d131e7757f05163f36ec_hu5a8ad7f9d9c6297e9afdcb725f5bca37_30238_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post SDA: Safe and documented for activism | SDA: Seguros y documentados para el activismo"
+                        
+                        data-hash="md5-IPzh3ttC0THndX8FFj827A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">SDA: Safe and documented for activism | SDA: Seguros y documentados para el activismo</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/analysis-of-malicious-documents-bonus-blog-post-more-recent-techniques-in-attacks-with-malicious-documents/">
+        
+        
+            <div class="article-image">
+                <img src="/p/analysis-of-malicious-documents-bonus-blog-post-more-recent-techniques-in-attacks-with-malicious-documents/1.b4a1092850d9c8a78babc75343a6b125_hu36a617cf5e3c297ddbde091be7327273_36258_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Analysis of malicious documents – Bonus blog post – More recent techniques in attacks with malicious documents  "
+                        
+                        data-hash="md5-tKEJKFDZyKeLq8dTQ6axJQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Analysis of malicious documents – Bonus blog post – More recent techniques in attacks with malicious documents  </h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2025 Carlos Guerra
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -2,6 +2,7 @@
 title: About me
 description: About Carlos and this site
 date: '2022-02-14'
+toc: false
 aliases:
   - about-me
   - about-carlos
@@ -44,7 +45,7 @@ So far, I contributed to the program proposal and designed the strategies and pr
 
 After my Ford/Mozilla Open Web Fellowship, I joined the [Derechos Digitales](https://derechosdigitales.org/) team, where I provided IT support and implemented security-related activities across Latin America. This included trainings, audits, and network building for civil society actors. I also had the opportunity to deepen my IT administration skills, developing, for example, an [Ansible playbook for secure static/PHP/WordPress deployments](https://github.com/CGurity/ansible-lemp-wp-certbot-playbook) (which might be updated soon).
 
-## Venezuela Inteligente (now VESinFiltro) - pasar a lista de abajo si resulta complicado redactar mucho
+## Venezuela Inteligente (now VESinFiltro)
 
 [Here](https://vesinfiltro.com/) I helped the team to develop a monitoring campaign to measure technical censorship in Venezuela around 2014 and also later as a collaborator for other activities. I contributed in a couple of quick research pieces around [phishing campaigns conducted by the Venezuelan government](https://vesinfiltro.com/noticias/Phishing_by_Venezuelan_government_targets_activists/), there we uncovered and analyzed DNS poisoning and spoofing in the country main ISP, making users to redirect legitimate traffic to malicious clone websites targeting opposition simpatizers.
 
