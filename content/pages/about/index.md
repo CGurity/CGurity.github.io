@@ -23,6 +23,16 @@ This website is mostly a repository of resources where I collaborated, sessions 
 
 I'm (among other things) a digital security trainer, auditor, and advisor with experience working mostly with civil society actors like human rights defenders, journalists, and targeted activists and groups. My biggest interests in this field are facilitation and the learning aspects of digital security and threat modeling, creation of materials, and training on more advanced threats for local security practitioners, as well than working with high and extreme risk actors. 
 
+Currently, I'm open to working on consultancies. The work I usually do includes:
+
+- Digital security trainings, assessments, consultations, organizational policy development, control deployment, incident response, etc. I also have experience organizing and conducting trainings for other security practitioners who want to become trainers, auditors, and first responders, among others. Currently, my interest is more focused on computer forensics, malware analysis, and integrating technical context into other aspects of security, including physical, emotional, financial, administrative, and regulatory.
+- Technical material development, including guides, tutorials, courses, and other resources. Most of my experience is in digital security-related products, but I also have experience with different kinds of technical materials, such as tool documentation and first-contact materials for new audiences. I also have experience with translations between English and Spanish.
+- Organizational process review and rework, not only to make sure security and privacy considerations are incorporated, but also to make sure the processes are efficient, leverage technology in a way that makes sense, and make people's lives easier. My experience includes the execution of risk, need, and capacity assessments.
+- Technical research, I'm particularly interested in technical surveillance and censorship
+- Facilitating activities with a clear goal in mind and understanding the audience, I can develop and execute exercises to gather necessary information, ensure alignment, or enhance processes and dynamics within groups.
+
+If you are interested in connecting to discuss work opportunities, you can reach out to contact[at]cguerra.com
+
 I have worked in global, regional and in-country projects and organizations, the biggest ones are:
 
 ## Internews: Greater Internet Freedom
