@@ -26,7 +26,7 @@ services:
         shortname: ""
     # GA Tracking ID
     googleAnalytics:
-        id:
+        id: G-TG1KETVGB8
 
 pagination:
     pagerSize: 10
