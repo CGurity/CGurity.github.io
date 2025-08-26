@@ -31,7 +31,7 @@ Currently, I'm open to working on consultancies. The work I usually do includes:
 - Technical research, I'm particularly interested in technical surveillance and censorship
 - Facilitating activities with a clear goal in mind and understanding the audience, I can develop and execute exercises to gather necessary information, ensure alignment, or enhance processes and dynamics within groups.
 
-If you are interested in connecting to discuss work opportunities, you can reach out to contact[at]cguerra.com
+If you are interested in connecting to discuss work opportunities, you can reach out to contact[at]cguerra.com, or scheduling a call directly [here](https://calendar.app.google/KWjW1Ng6bteZsBkX9).
 
 I have worked in global, regional and in-country projects and organizations, the biggest ones are:
 
