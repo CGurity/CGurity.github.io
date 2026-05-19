@@ -1,0 +1,87 @@
+media:
+  input: content/posts
+  output: ""
+
+content:
+  - name: posts
+    label: Posts
+    path: content/posts
+    type: collection
+    filename: "{year}-{month}-{day}-{primary}/index.md"
+    format: toml
+    view:
+      fields: [title, date, categories, description]
+      default:
+        order: desc
+        field: date
+    fields:
+      - name: author
+        label: Author
+        type: text
+        required: true
+        default: "Carlos Guerra"
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: tags
+        label: Tags
+        type: list
+      - name: categories
+        label: Categories
+        type: list
+        default:
+          - "en"
+      - name: series
+        label: Series
+        type: list
+      - name: aliases
+        label: Aliases
+        type: list
+      - name: image
+        label: Featured Image
+        type: image
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: pages
+    label: Pages
+    path: content/pages
+    type: collection
+    filename: "{primary}/index.md"
+    format: yaml
+    fields:
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: date
+        label: Date
+        type: date
+      - name: lastmod
+        label: Last Modified
+        type: date
+      - name: toc
+        label: Table of Contents
+        type: boolean
+        default: false
+      - name: aliases
+        label: Aliases
+        type: list
+      - name: license
+        label: License
+        type: text
+      - name: body
+        label: Content
+        type: rich-text
