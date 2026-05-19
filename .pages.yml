@@ -1,6 +1,6 @@
 media:
-  input: content/posts
-  output: ""
+  input: static/images
+  output: /images
 
 content:
   - name: posts
@@ -36,7 +36,20 @@ content:
         type: list
       - name: categories
         label: Categories
-        type: list
+        type: select
+        multiple: true
+        options:
+          - article
+          - author
+          - contributor
+          - en
+          - es
+          - event
+          - guide
+          - presenter
+          - research
+          - software
+          - speaker
         default:
           - "en"
       - name: series
