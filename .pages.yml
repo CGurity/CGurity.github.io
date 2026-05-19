@@ -1,6 +1,7 @@
 media:
-  input: static/images
-  output: /images
+  - name: images
+    input: static/images
+    output: /images
 
 content:
   - name: posts
@@ -8,7 +9,7 @@ content:
     path: content/posts
     type: collection
     filename: "{year}-{month}-{day}-{primary}/index.md"
-    format: toml
+    format: toml-frontmatter
     view:
       fields: [title, date, categories, description]
       default:
@@ -71,7 +72,7 @@ content:
     path: content/pages
     type: collection
     filename: "{primary}/index.md"
-    format: yaml
+    format: yaml-frontmatter
     fields:
       - name: title
         label: Title
