@@ -37,19 +37,20 @@ content:
       - name: categories
         label: Categories
         type: select
-        multiple: true
         options:
-          - article
-          - author
-          - contributor
-          - en
-          - es
-          - event
-          - guide
-          - presenter
-          - research
-          - software
-          - speaker
+          multiple: true
+          values:
+            - article
+            - author
+            - contributor
+            - en
+            - es
+            - event
+            - guide
+            - presenter
+            - research
+            - software
+            - speaker
         default:
           - "en"
       - name: series
